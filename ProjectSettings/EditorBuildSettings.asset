@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OldManHouse.unity
     guid: 456c9ceddd084674c947815a0ff9e640
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: 796065ce03300854ba14dfb0f1d17fff
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 59b92f0cc06d1cb41929dbf8beb9fb3d
+  - enabled: 1
+    path: Assets/Scenes/Garden.unity
+    guid: 4eb478c989d5fa546ae9eb5d5388d590
   m_configObjects: {}

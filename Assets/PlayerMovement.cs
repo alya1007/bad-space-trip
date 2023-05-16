@@ -2,52 +2,38 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5.0f;      // The speed at which the player moves.
-    public Animator animator;       // Reference to the Animator component.
-    private Vector3 direction;      // The direction in which the player should move.
-    private bool isMoving = false;  // Indicates whether the player is currently moving.
+    public float speed = 5f;  // Movement speed of the object
+    public float maxHeight = 10f;  // Maximum height the object can reach
 
-    private void Update()
+    private float screenWidth;
+    private float screenHeight;
+
+    private void Start()
     {
-        // Get the horizontal and vertical input.
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
+        // Calculate the screen boundaries in world space coordinates
+        float screenAspect = (float)Screen.width / Screen.height;
+        float cameraHeight = Camera.main.orthographicSize * 2;
+        screenWidth = screenAspect * cameraHeight;
+        screenHeight = cameraHeight;
+    }
 
-        // Set the direction based on the input.
-        if (horizontalInput < 0)
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            direction = Vector3.left;
+            transform.position += Vector3.left * speed * Time.deltaTime;
         }
-        else if (horizontalInput > 0)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            direction = Vector3.right;
+            transform.position += Vector3.right * speed * Time.deltaTime;
         }
-        else if (verticalInput > 0)
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            direction = Vector3.forward;
+            transform.position += Vector3.up * speed * Time.deltaTime;
         }
-        else if (verticalInput < 0)
+        if (Input.GetKey(KeyCode.DownArrow))
         {
-            direction = Vector3.back;
-        }
-        else
-        {
-            direction = Vector3.zero; // If no input is detected, the player stays in the default position.
-        }
-
-        // Move the player in the direction specified by the input.
-        transform.position += direction * speed * Time.deltaTime;
-
-        // Update the Animator component.
-        if (direction != Vector3.zero && !isMoving)
-        {
-            isMoving = true;
-            animator.SetBool("IsMoving", true);
-        }
-        else if (direction == Vector3.zero && isMoving)
-        {
-            isMoving = false;
-            animator.SetBool("IsMoving", false);
+            transform.position += Vector3.down * speed * Time.deltaTime;
         }
     }
 }
