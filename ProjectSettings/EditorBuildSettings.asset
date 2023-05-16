@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/OldManHouse.unity
     guid: 456c9ceddd084674c947815a0ff9e640
   - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 00158fad4827717458a0d9292cae3008
+  - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: 1d51812143b657b4898c9abbac3e41b3
+  - enabled: 1
     path: Assets/Scenes/City.unity
     guid: 796065ce03300854ba14dfb0f1d17fff
   - enabled: 1
