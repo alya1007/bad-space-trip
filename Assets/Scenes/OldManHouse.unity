@@ -231,6 +231,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 90928664434888660, guid: 6203c4443e13aa84993370f3d7eed120, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 407557899325940893, guid: 6203c4443e13aa84993370f3d7eed120, type: 3}
       propertyPath: m_SortingOrder
       value: 100
@@ -477,6 +481,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2086466269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086466261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a475955a1aa85674193ee9576c6e952c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomBoundaryY: -5.6
 --- !u!1001 &6173161593964730810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,7 +503,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2724615472951761570, guid: 1ef66d392f7998141b0075e9f96dd7fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.64
+      value: -4.15
       objectReference: {fileID: 0}
     - target: {fileID: 3751884440504007552, guid: 1ef66d392f7998141b0075e9f96dd7fc, type: 3}
       propertyPath: m_Size.y
