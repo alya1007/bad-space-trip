@@ -3,13 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class BoundaryController : MonoBehaviour
 {
-    public string nextScene; // The name of the scene to transition to
+    public int nextSceneBuildIndex; // Build index of the next scene
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(nextScene); // Load the next scene
+            SceneManager.LoadScene(nextSceneBuildIndex); // Load the next scene by index
         }
     }
 }
