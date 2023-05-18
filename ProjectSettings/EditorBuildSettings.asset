@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Inventory.unity
+    guid: 3496351f7321feb41944296cc7361ce4
+  - enabled: 1
     path: Assets/Scenes/OldManHouse.unity
     guid: 456c9ceddd084674c947815a0ff9e640
   - enabled: 1
