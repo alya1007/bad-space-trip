@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimalController : MonoBehaviour
 {
     public GameObject player;
+    public PlayerController pc;
 
     public float moveSpeed = 6f;
     public float followRange = 15f;
-    public float attackRange = 3f;
+    public float attackRange = 6f;
 
     public Vector3 spawnPoint = new Vector3(-14.76f, -2.64f, 0);
 
@@ -16,6 +15,7 @@ public class AnimalController : MonoBehaviour
     
     void Start()
     {
+        pc = new PlayerController();
         animalRigidBody = GetComponent<Rigidbody2D>();
         transform.position = spawnPoint;   
     }
@@ -23,14 +23,15 @@ public class AnimalController : MonoBehaviour
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        PlayerController pc = FindObjectOfType<PlayerController>();
 
         if (distanceToPlayer <= followRange)
         {
             FollowPlayer();
-
+            
             if (distanceToPlayer <= attackRange)
             {
-                Attack();
+                Attack(pc);
             }
         }
     }
@@ -38,14 +39,13 @@ public class AnimalController : MonoBehaviour
     void FollowPlayer()
     {
         Vector3 direction = (player.transform.position - transform.position).normalized;
-        // transform.localScale = new Vector3(-1, 1, 0);
         GetComponent<SpriteRenderer>().flipX = true;
         animalRigidBody.velocity = direction * moveSpeed;
     }
 
-    void Attack()
+    void Attack(PlayerController pc)
     {
-        // Implement attack logic
-        // ...
+        int damage = Random.Range(30, 50);
+        pc.decreaseHealth(damage);
     }
 }

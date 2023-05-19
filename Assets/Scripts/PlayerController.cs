@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Adjust this to control the player's movement speed
 
+    public int hpRate = 100;
+
     private Rigidbody2D rb;
 
     private void Awake()
@@ -28,5 +30,15 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-2, 2, 2);
         }
         rb.velocity = movement;
+    }
+
+    public void decreaseHealth(int damage)
+    {
+        if (hpRate < 0)
+        {
+            //Destroy();
+        }
+        
+        hpRate -= damage;
     }
 }
