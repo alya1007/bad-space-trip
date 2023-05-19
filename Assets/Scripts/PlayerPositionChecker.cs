@@ -19,7 +19,6 @@ public class PlayerPositionChecker : MonoBehaviour
             if (playerX >= minX && playerX <= maxX)
             {
                 isInRange = true;
-                Debug.Log(isInRange);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     SceneManager.LoadScene(sceneToLoadIndex);

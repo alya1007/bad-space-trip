@@ -47,7 +47,6 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
-    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -90,7 +89,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Store
@@ -113,8 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1932, y: 424}
-    spritePosition: {x: 583, y: 310}
+    uvTransform: {x: 1349, y: 114}
   - name: Library
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -135,8 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1039}
-    spritePosition: {x: 0, y: 338}
+    uvTransform: {x: 4, y: 701}
   - name: NPC Building
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -157,8 +153,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 882, y: 1036}
-    spritePosition: {x: 1306, y: 341}
+    uvTransform: {x: -418, y: 698}
   - name: Earth
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -179,8 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1510, y: 1039}
-    spritePosition: {x: 0, y: 310}
+    uvTransform: {x: 1510, y: 729}
   - name: Road
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -202,7 +196,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1932, y: 4}
-    spritePosition: {x: 0, y: 0}
   - name: Sky
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -223,8 +216,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: 53}
+    uvTransform: {x: 4, y: -49}
   characterData:
     bones: []
     parts: []

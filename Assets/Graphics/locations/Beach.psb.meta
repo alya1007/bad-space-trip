@@ -47,7 +47,6 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
-    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -90,7 +89,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Medium stone
@@ -113,8 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1561, y: 2668}
-    spritePosition: {x: 658, y: 0}
+    uvTransform: {x: 903, y: 2668}
   - name: 'Big Road stone '
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -136,7 +133,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1361, y: 2226}
-    spritePosition: {x: 0, y: 442}
   - name: Layer 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -158,7 +154,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 2668}
-    spritePosition: {x: 0, y: 0}
   - name: Layer 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -180,7 +175,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 1080}
-    spritePosition: {x: 0, y: 0}
   - name: Layer 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -202,7 +196,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 1908}
-    spritePosition: {x: 0, y: 0}
   - name: Sky
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -223,8 +216,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: 12}
+    uvTransform: {x: 4, y: -8}
   characterData:
     bones: []
     parts: []
