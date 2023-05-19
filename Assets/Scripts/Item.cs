@@ -11,7 +11,6 @@ public class Item : ScriptableObject
     public ItemType type;
     public ActionType actionType;
     public Vector2Int range = new Vector2Int(2, 1);
-    public bool stackable = false;
 
 
 }

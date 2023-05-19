@@ -11,5 +11,8 @@ public class InventoryItem : MonoBehaviour
     {
         image.sprite = newItem.image;
     }
-
+    public void Start()
+    {
+        Initialize(item);
+    }
 }
