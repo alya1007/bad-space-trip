@@ -611,7 +611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3884531427724787166, guid: 9d0990a9a9ed33e4c864948e692f57ac, type: 3}
       propertyPath: attackRange
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3884531427724787166, guid: 9d0990a9a9ed33e4c864948e692f57ac, type: 3}
       propertyPath: followRange

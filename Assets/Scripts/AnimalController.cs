@@ -9,6 +9,9 @@ public class AnimalController : MonoBehaviour
     public float followRange = 15f;
     public float attackRange = 6f;
 
+    public float cooldownDuration = 1f;
+    private float coolDownTimer = 0f;
+
     public Vector3 spawnPoint = new Vector3(-14.76f, -2.64f, 0);
 
     private Rigidbody2D animalRigidBody;
@@ -45,7 +48,14 @@ public class AnimalController : MonoBehaviour
 
     void Attack(PlayerController pc)
     {
-        int damage = Random.Range(30, 50);
-        pc.decreaseHealth(damage);
+        if (coolDownTimer <= 0f)
+        {
+            int damage = Random.Range(30, 50);
+            Debug.Log("1");
+            pc.decreaseHealth(damage);
+        }
+
+        coolDownTimer = cooldownDuration;
+        
     }
 }
