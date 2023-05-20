@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // public RawImage image;
+    // public Color selectedColor, unselectedColor;
+    // private void Awake()
+    // {
+    //     Unselect();
+    // }
+    // public void Select()
+    // {
+    //     image.color = selectedColor;
+    // }
+    // public void Unselect()
+    // {
+    //     image.color = unselectedColor;
+    // }
 }

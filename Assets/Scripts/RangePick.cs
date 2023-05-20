@@ -49,7 +49,7 @@ public class RangePick : MonoBehaviour
     public float maxX = -5.28f;
     public Canvas canvasToToggle;
     private bool isInRange = false;
-    // public InventoryManager inventoryManager;
+    public KeyCode key;
     public Item itemToPick;
     public GameObject objectToAdd;
 
@@ -62,7 +62,7 @@ public class RangePick : MonoBehaviour
             if (playerX >= minX && playerX <= maxX)
             {
                 isInRange = true;
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(key))
                 {
                     InventoryManager.instance.AddItem(itemToPick);
                     Destroy(objectToAdd);

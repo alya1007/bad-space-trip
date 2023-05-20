@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
         {
             //Destroy();
         }
-        
         hpRate -= damage;
     }
 }
